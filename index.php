@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login y Register - MagtimusPro</title>
+    <title>Marejada 2024</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
@@ -39,16 +39,16 @@
                     </form>
 
                     <!--Register-->
-                    <form action="" class="formulario__register">
+                    <form action="php/registro.php" method = "POST" class="formulario__register">
                         <h2>Regístrarse</h2>
-                        <input type="text" placeholder="Nombre">
-                        <input type="text" placeholder="Apellido">
-                        <input type="text" placeholder="Correo Electronico">
-                        <input type="password" placeholder="Contraseña">
-                        <input type="password" placeholder="Repite tu contraseña">
-                        <input type="text" placeholder="Escuela">
-                        <div class>
-                            <select class="form-select" id="year" required>
+                        <input type="text" placeholder="Nombre" name="nombre">
+                        <input type="text" placeholder="Apellido" name="apellido">
+                        <input type="text" placeholder="Correo Electronico" name="email">
+                        <input type="password" placeholder="Contraseña" name="contrasena">
+                        <input type="password" placeholder="Repite tu contraseña" name="contrasena-repetida">
+                        <input type="text" placeholder="Escuela" name="escuela">
+                        <div>
+                            <select class="form-select" id="year" required name="ano">
                               <option value="">Seleccionar año</option>
                               <option value="1">1ro</option>
                               <option value="2">2do</option>
@@ -58,8 +58,8 @@
                               <option value="6">6to</option>
                             </select>
                           </div>
-                        <div class>
-                            <select class="form-select" id="course" required>
+                        <div>
+                            <select class="form-select" id="course" required name="curso">
                             <option value="">Seleccionar curso</option>
                             <option value="A">A</option>
                             <option value="B">B</option>
@@ -71,7 +71,6 @@
                     </form>
                 </div>
             </div>
-
         </main>
 
         <script src="assets/js/script.js"></script>
