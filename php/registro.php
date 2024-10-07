@@ -29,7 +29,7 @@
     mysqli_stmt_store_result($checkStmt);
 
     if (mysqli_stmt_num_rows($checkStmt) > 0) {
-        die("El correo electrónico ya está registrado.");
+        die("El correo electrónico ya está registrado. ");
     }
     mysqli_stmt_close($checkStmt);
 
